@@ -8,6 +8,8 @@
     --background-azul-claro: #507697;
 }
 body{
+    background-image: url(img/img-fundo.webp);
+    background-attachment: fixed;
     overflow-x: hidden;
 }
 .header{
@@ -46,10 +48,26 @@ body{
 .main{
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
-    gap: 5vw;
-    padding: 20px;
+    gap: 2vw;
+    padding-top: 20px;
+    padding-inline: 80px;
     height: calc(100vh - 90px);
-    background-image: url(img/img-fundo.webp);
+}
+.conteudo-perfil{
+    margin-top: 25px;
+    display: grid;
+    gap: 50px;
+}
+.bem-vindo{
+    background: rgba(255, 183, 0, 0.764);
+    align-items: center;
+    padding-inline: 10px;
+    padding-block: 5px;
+    margin: auto;
+    border-radius: 30px;
+    color: #fff;
+    width: 25vw;
+    height: 30px;
 }
 .info-perfil{
     color: #fff;
@@ -77,6 +95,15 @@ body{
 }
 p{
     font-weight: lighter;
+}
+.sobre{
+    font-size: 20px;
+    width: 45vw;
+    height: 200px;
+    padding: 20px;
+    border-radius: 40px;
+    background: rgba(255, 255, 0, 0.545);
+    box-shadow: 1px 1px 10px black;
 }
 .conteudo-skills{
     font-size: 20px;
@@ -138,12 +165,22 @@ p{
     }
 
     /*MAIN*/
-
-    .main{
+    body{
         background-image: url(img/img-fundo\ -\ mobile.webp);
+        background-attachment: fixed;
+    }
+    .main{
         height: 100vw;
-        display: grid;     
+        display: grid; 
+        padding: 25px;   
         gap: 10vh;
+    }
+    .conteudo-perfil{
+        display: grid;
+        gap: 70px;
+    }
+    .bem-vindo{
+        width: 300px;
     }
     .info-perfil{
         display: grid;
@@ -156,6 +193,10 @@ p{
     .conteudo-skills{
         width: 80vw;
         height: 610px;
+    }
+    .sobre{
+        height: 100%;
+        width: 80vw;
     }
     .skills{
         display: none;
