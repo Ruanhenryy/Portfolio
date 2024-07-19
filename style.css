@@ -5,7 +5,7 @@
 :root{
     --background-azul-escuro: #2A446B;
     --background-azul: #013d6bd7;
-    --background-azul-claro: #507697;
+    --background-azul-claro: #b0f880;
 }
 body{
     background-image: url(img/img-fundo.webp);
@@ -107,24 +107,21 @@ p{
 }
 .conteudo-skills{
     font-size: 20px;
-    float: right;
+    margin: auto;
     width: 40vw;
-    height: 760px;
     padding: 20px;
     border-radius: 40px;
     box-shadow: 1px 1px 10px black;
     background: var(--background-azul);
 }
 .skills{
+    width: 100%;
     text-align: center;
-}
-.skills-mobile{
-    display: none;
 }
 .img{
     border-radius: 10px;
 }
-@media (max-width: 750px) {
+@media (max-width: 1200px) {
     #icon{
         font-size: 40px;
         color: #fff;
@@ -135,14 +132,11 @@ p{
         display: none;
     }
     .conteiner-menu{
-        z-index: 10;
         width: 150px;
         display: none;
-        margin-left: 300px;
         position: sticky;
         background: var(--background-azul-claro);
         text-align: center;
-        border-bottom-left-radius: 50px;
         border-bottom-right-radius: 50px;
     }
     .menu-mobile{
@@ -177,6 +171,7 @@ p{
     }
     .conteudo-perfil{
         display: grid;
+        margin: auto;
         gap: 70px;
     }
     .bem-vindo{
@@ -190,18 +185,19 @@ p{
     .conteiner-foto{
         margin: auto;
     }
-    .conteudo-skills{
-        width: 80vw;
-        height: 610px;
-    }
     .sobre{
         height: 100%;
         width: 80vw;
     }
-    .skills{
-        display: none;
+    .conteudo-skills{
+        width: 80vw;
     }
-    .skills-mobile{
-        display: block;
+    .skills{
+        width: 100%;
+        text-align: center;
+    }
+    .img{
+        width: 300px;
+        height: 300px;
     }
 }
