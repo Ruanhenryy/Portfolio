@@ -1,3 +1,5 @@
+
+//MENU
 const btnmenu = document.querySelector('#icon')
 const menu = document.querySelector('.conteiner-menu')
 const btnSairMenu = document.querySelector('#icon-menu')
@@ -15,3 +17,6 @@ btnSairMenu.addEventListener('click', function(){
     btnmenu.style.display = 'block'
     btnSairMenu.style.display = 'none'
 })
+
+
+//CARROSSEL
