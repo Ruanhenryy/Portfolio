@@ -52,7 +52,7 @@ body{
     display: grid;
     gap: 30px;
     padding-top: 20px;
-    padding-inline: 80px;
+    padding-inline: 20px;
     height: calc(100vh - 90px);
 }
 .principal{
@@ -127,11 +127,7 @@ p{
 .img{
     border-radius: 10px;
 }
-.carrossel{
-    text-align: center;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-}
+        
 #titulo-projetos{
     font-family: 'Rowdies' 'sans-serif';
     font-size: 58px;
@@ -139,20 +135,82 @@ p{
     padding: 20px;
     color: #fff;
 }
-.conteiner-carrossel{
+section.slides{
+    width: 100%;
+    height: auto;
     overflow: hidden;
-    width: 100%;
-    height: 500px;
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    transform: translateX(0);
+    padding: 0;
+    margin: auto;
+    text-align: center;
 }
-.img-carrossel{
-    object-fit: cover;
+.slide-content{
+    width: 500%;
+    display: flex;
+    height: auto;
+}
+.box-slide{
+    width: 20%;
+    height: auto;
+    position: relative;
+    text-align: center;
+}
+.box-slide img{
     width: 100%;
-    height: 500px;
+    height: 600px;
+}
+.slide-content input{
+    display: none;
+}
+.nav-manual, .nav-auto{
+    position: absolute;
+    width: 100%;
+    margin-top: 40%;
+    display: flex;
+    justify-content: center;
+}
+.nav-manual .manual-btn, .nav-auto div{
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child){
+    margin-right: 10px;
+}
+.nav-manual .manual-btn:hover{
+    background-color: greenyellow;
+}
+/*
+.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child){
+    margin-right: 10px;
+}
+.nav-manual .manual-btn:hover{
+    background: gray;
 }
 
+#radio1:checked ~ .nav-auto .auto-btn1{
+    background-color: rgb(216, 13, 13);
+}
+ 
+#radio2:checked ~ .nav-auto .auto-btn2{
+    background-color: rgb(211, 52, 52);
+}
+#radio3:checked ~ .nav-auto .auto-btn3{
+    background-color: rgb(215, 35, 35);
+}
+#radio1:checked ~ .primeiro{
+    margin-left: 0%;
+}
+
+#radio2:checked ~ .primeiro{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .primeiro{
+    margin-left: -50%;
+}
+*/
 @media (max-width: 1200px) {
     #icon{
         font-size: 40px;
