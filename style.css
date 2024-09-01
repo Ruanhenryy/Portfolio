@@ -155,16 +155,17 @@ section.slides{
     text-align: center;
 }
 .box-slide img{
-    width: 100%;
-    height: 600px;
+    width: 30%;
+    height: 500px;
+    border-radius: 10px;    
 }
 .slide-content input{
     display: none;
 }
 .nav-manual, .nav-auto{
     position: absolute;
-    width: 100%;
-    margin-top: 40%;
+    width: 98%;
+    margin-top: 34%;
     display: flex;
     justify-content: center;
 }
@@ -180,6 +181,21 @@ section.slides{
 }
 .nav-manual .manual-btn:hover{
     background-color: greenyellow;
+}
+#radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2, #radio3:checked ~ .nav-auto .auto-btn3, #radio4:checked ~ .nav-auto .auto-btn4{
+    background-color: yellow;
+}
+#radio1:checked ~.primeiro{
+    margin-left: 0%;
+}
+#radio2:checked ~.primeiro{
+    margin-left: -20%;
+}
+#radio3:checked ~.primeiro{
+    margin-left: -40%;
+}
+#radio4:checked ~.primeiro{
+    margin-left: -60%;
 }
 /*
 .nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child){

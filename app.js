@@ -20,3 +20,21 @@ btnSairMenu.addEventListener('click', function(){
 
 
 //CARROSSEL
+
+document.querySelector('#radio1').checked = true
+
+let contador = 1
+
+setInterval(() =>{
+    proximaImg()
+}, 5000)
+
+function proximaImg(){
+    contador++;
+
+    if(contador > 4){
+        contador = 1
+    }
+
+    document.getElementById('radio' +contador).checked = true
+}
