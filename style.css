@@ -7,7 +7,7 @@
 :root{
     --background-azul-escuro: #2A446B;
     --background-azul: #013d6bd7;
-    --background-azul-claro: #b0f880;
+    --background-verde-claro: #b0f880;
 }
 body{
     background-image: url(img/img-fundo.webp);
@@ -106,9 +106,11 @@ p{
     font-size: 20px;
     width: 45vw;
     height: 200px;
+    text-align: justify;
     padding: 20px;
     border-radius: 40px;
-    background: rgba(255, 255, 0, 0.545);
+    background: var(--background-azul);
+    color: azure;
     box-shadow: 1px 1px 10px black;
 }
 .conteudo-skills{
@@ -133,6 +135,8 @@ p{
     font-size: 58px;
     font-weight: bold;
     padding: 20px;
+    background-image: linear-gradient( 135deg, rgba(0, 0, 255, 0.800) 60%, rgba(0, 128, 0, 0.600) 40%);
+    border-radius: 30px;
     color: #fff;
 }
 section.slides{
@@ -142,11 +146,13 @@ section.slides{
     padding: 0;
     margin: auto;
     text-align: center;
+    margin-top: 50px;
 }
 .slide-content{
     width: 500%;
     display: flex;
     height: auto;
+    margin-top: 50px;
 }
 .box-slide{
     width: 20%;
@@ -180,10 +186,10 @@ section.slides{
     margin-right: 10px;
 }
 .nav-manual .manual-btn:hover{
-    background-color: greenyellow;
+    background-color: var(--background-verde-claro);
 }
 #radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2, #radio3:checked ~ .nav-auto .auto-btn3, #radio4:checked ~ .nav-auto .auto-btn4{
-    background-color: yellow;
+    background-color: var(--background-verde-claro);
 }
 #radio1:checked ~.primeiro{
     margin-left: 0%;
@@ -197,36 +203,6 @@ section.slides{
 #radio4:checked ~.primeiro{
     margin-left: -60%;
 }
-/*
-.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child){
-    margin-right: 10px;
-}
-.nav-manual .manual-btn:hover{
-    background: gray;
-}
-
-#radio1:checked ~ .nav-auto .auto-btn1{
-    background-color: rgb(216, 13, 13);
-}
- 
-#radio2:checked ~ .nav-auto .auto-btn2{
-    background-color: rgb(211, 52, 52);
-}
-#radio3:checked ~ .nav-auto .auto-btn3{
-    background-color: rgb(215, 35, 35);
-}
-#radio1:checked ~ .primeiro{
-    margin-left: 0%;
-}
-
-#radio2:checked ~ .primeiro{
-    margin-left: -25%;
-}
-
-#radio3:checked ~ .primeiro{
-    margin-left: -50%;
-}
-*/
 @media (max-width: 1200px) {
     #icon{
         font-size: 40px;
@@ -280,6 +256,10 @@ section.slides{
         margin: auto;
         gap: 70px;
     }
+    .main .principal{
+        display: grid;
+        gap: 70px;
+    }
     .bem-vindo{
         width: 300px;
     }
@@ -297,6 +277,7 @@ section.slides{
     }
     .conteudo-skills{
         width: 80vw;
+
     }
     .skills{
         width: 100%;
